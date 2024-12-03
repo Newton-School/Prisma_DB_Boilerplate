@@ -1,5 +1,5 @@
 const express = require('express');
-const { createCommand, getRecord, updateRecord, removeRecord } = require('../controller/prismaController');
+const { createCommand, getRecord, updateRecord, removeRecord, removeAllRecord } = require('../controller/prismaController');
 const router = express.Router();
 
 // Create a record
@@ -16,5 +16,8 @@ router.put('/put/:id', updateRecord);
 
 // // Delete a perticular record
 router.delete('/remove/:id', removeRecord );
+
+// Bulk delete
+router.delete('/removeall', removeAllRecord );
 
 module.exports = router;

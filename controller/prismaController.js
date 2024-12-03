@@ -75,4 +75,18 @@ const removeRecord = async (req, res) => {
     }
 }
 
-module.exports = { createCommand,getRecord, updateRecord, removeRecord }
+const removeAllRecord = async (req, res) => {
+    try {
+
+        //Complete this delelet all record using prisma ORM
+        const user = ;
+
+
+        res.status(200).json({ message: "All users deleted successfully" }); 
+        
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
+}
+
+module.exports = { createCommand,getRecord, updateRecord, removeRecord, removeAllRecord }
