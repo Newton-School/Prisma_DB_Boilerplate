@@ -6,7 +6,7 @@ const createCommand = async (req,res) =>{
         const { name, email } = req.body;
     
         // Complete this creation request using prisma ORM
-        const user = ;
+        const user;
     
 
 
@@ -23,7 +23,7 @@ const getRecord =  async (req, res) => {
 
 
             // Complete this get all request using prisma ORM
-            const user =  ;
+            const user;
 
 
 
@@ -31,7 +31,7 @@ const getRecord =  async (req, res) => {
         }
 
         // Complete this get by id request using prisma ORM
-        const user = ;
+        const user;
 
 
         if (!user) return res.status(404).json({ error: "User not found" });
@@ -48,7 +48,7 @@ const updateRecord = async (req, res) => {
 
 
         // Complete this creation request using prisma ORM
-        const user = ;
+        const user;
 
 
 
@@ -64,7 +64,7 @@ const removeRecord = async (req, res) => {
         const { id } = req.params;
 
         // Complete this deletion request using prisma ORM
-        const user = ;
+        const user;
 
 
 
@@ -79,7 +79,7 @@ const removeAllRecord = async (req, res) => {
     try {
 
         //Complete this delelet all record using prisma ORM
-        const user = ;
+        const user;
 
 
         res.status(200).json({ message: "All users deleted successfully" }); 
