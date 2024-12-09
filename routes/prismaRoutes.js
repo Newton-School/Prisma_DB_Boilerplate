@@ -12,7 +12,7 @@ router.get('/get', getRecord);
 router.get('/get?id', getRecord);
 
 // Update a perticular record (PUT)
-router.put('/put/:id', updateRecord);
+router.put('/update/:id', updateRecord);
 
 // // Delete a perticular record
 router.delete('/remove/:id', removeRecord );
